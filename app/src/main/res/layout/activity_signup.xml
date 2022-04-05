@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    tools:context=".SignupActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buat Akun"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            android:fontFamily="@font/poppins_semibold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Memerlukan informasi untuk membuat akun Anda"
+            android:fontFamily="@font/poppins_regular" />
+
+        <!--    Nama Lengkap    -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusBottomEnd="8dp">
+
+            <EditText
+                android:id="@+id/et_nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama lengkap"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:fontFamily="@font/poppins_regular" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--    Email    -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusBottomEnd="8dp">
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Alamat email"
+                android:textColor="@color/black"
+                android:inputType="textEmailAddress"
+                android:fontFamily="@font/poppins_regular" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--    Password    -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:passwordToggleEnabled="true"
+            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusBottomEnd="8dp">
+
+            <EditText
+                android:id="@+id/et_kata_sandi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Kata sandi"
+                android:textColor="@color/black"
+                android:inputType="textPassword"
+                android:fontFamily="@font/poppins_regular" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--    Confirm Password    -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:passwordToggleEnabled="true"
+            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusBottomEnd="8dp">
+
+            <EditText
+                android:id="@+id/et_konfirmasi_kata_sandi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Konfirmasi kata sandi"
+                android:textColor="@color/black"
+                android:inputType="textPassword"
+                android:fontFamily="@font/poppins_regular" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--    Button Masuk    -->
+        <Button
+            android:id="@+id/btn_daftar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:paddingVertical="16sp"
+            android:text="Daftar"
+            android:textSize="16dp"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/poppins_semibold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Sudah punya Akun?"
+            android:fontFamily="@font/poppins_regular" />
+
+        <TextView
+            android:id="@+id/tv_masuk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="MASUK"
+            android:textColor="#FF4242"
+            android:drawableRight="@drawable/ic_baseline_arrow_forward"
+            android:drawableTint="#FF4242"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/poppins_regular" />
+
+    </LinearLayout>
+
+</RelativeLayout>
